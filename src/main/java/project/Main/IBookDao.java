@@ -6,6 +6,8 @@ public interface IBookDao {
 	public boolean addBook(BookDetails b);
 
 	public List<BookDetails> getAllBooks();
+	
+	public BookDetails getBookByPhotoName(String photoName);
 
 	public BookDetails getBookById(int id);
 

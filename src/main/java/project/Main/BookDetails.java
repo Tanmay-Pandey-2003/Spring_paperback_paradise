@@ -116,7 +116,7 @@ public class BookDetails {
 	
 	public BookDetails(String bookName, String author, Double price, String bookCategory, String status,
 			String photoName, String email) {
-		super();
+	
 		this.bookName = bookName;
 		this.author = author;
 		this.price = price;

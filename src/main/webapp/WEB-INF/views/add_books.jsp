@@ -101,7 +101,7 @@
     <%@ include file="navbar.jsp"%>
     
     <c:if test="${empty userObj }">
-        <%-- Redirect to login page if user is not logged in --%>
+        Redirect to login page if user is not logged in
         <c:redirect url="login.jsp"/>
     </c:if>
     
@@ -119,7 +119,7 @@
                             <p class="text-center text-danger">${failMsg }</p>
                             <c:remove var="failMsg" scope="session" />
                         </c:if>
-                        <form method="post" action="${pageContext.request.contextPath}/add_books"
+                        <form method="post" action="<c:url value='/add_books'/>"
                             enctype="multipart/form-data">
                             <div class="form-group">
                                 <label for="bname">Book Name</label>
@@ -137,7 +137,7 @@
                                 <label for="categories">Book Categories</label>
                                 <select id="categories" name="categories" class="form-control">
                                     <option value="New Book" selected>New Book</option>
-                                    <%-- Add other options if needed --%>
+                                    Add other options if needed
                                 </select>
                             </div>
                             <div class="form-group">

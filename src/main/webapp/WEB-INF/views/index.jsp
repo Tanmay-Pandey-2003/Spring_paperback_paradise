@@ -166,7 +166,7 @@
 	<%@ include file="footer.jsp"%>
 
 </body>
-</html> --%>
+</html>--%>
 
 <%@page import="org.springframework.web.context.support.WebApplicationContextUtils" %>
 <%@page import="project.Main.User"%>
@@ -231,7 +231,7 @@
             <div class="col-md-3">
                 <div class="card crd-ho">
                     <div class="card-body text-center">
-                        <img alt="" src="<c:url value='/book/<%=b.getPhotoName()%>' />"
+                        <img alt="" src="<c:url value='/book' />?photoName=<%=b.getPhotoName()%>"
                             style="width: 150px; height: 200px" class="img-thumblin">
                         <p><%=b.getBookName()%></p>
                         <p><%=b.getAuthor()%></p>
@@ -245,13 +245,13 @@
                             <%
                             } else {
                             %>
-                            <a href="<c:url value='/cart?bid=<%=b.getBookId()%>&uid=<%=u.getId()%>' />"
+                            <a href="<c:url value='/cart'/>?bid=<%=b.getBookId()%>&uid=<%=u.getId()%>"
                                 class="btn btn-danger btn-sm ml-2"><i
                                 class="fa-solid fa-cart-shopping"></i> Add</a>
                             <%
                             }
                             %>
-                            <a href="<c:url value='/viewBookDetails' />?bid=<%=b.getBookId()%>' />"
+                            <a href="<c:url value='/viewBookDetails' />?bid=<%=b.getBookId()%>"
                                 class="btn btn-success btn-sm ml-1">View Details</a> 
                             <a href="#" class="btn btn-danger btn-sm ml-1"><i
                                 class="fa-solid fa-indian-rupee-sign"></i> <%=b.getPrice()%></a>
@@ -288,7 +288,7 @@
             <div class="col-md-3">
                 <div class="card crd-ho">
                     <div class="card-body text-center">
-                        <img alt="" src="<c:url value='/book/<%=b.getPhotoName()%>'/> "
+                        <img alt="" src="<c:url value='/book'/><%=b.getPhotoName()%>"
                             style="width: 150px; height: 200px" class="img-thumblin">
                         <p><%=b.getBookName()%></p>
                         <p><%=b.getAuthor()%></p>
@@ -302,13 +302,12 @@
                             <%
                             } else {
                             %>
-                            <a href="<c:url value='/cart?bid=<%=b.getBookId()%>&uid=<%=u.getId()%>' />"
-                                class="btn btn-danger btn-sm ml-2"><i
+                            <a href="<c:url value='/cart'/>?bid=<%=b.getBookId()%>&uid=<%=u.getId()%>"                              class="btn btn-danger btn-sm ml-2"><i
                                 class="fa-solid fa-cart-shopping"></i> Add</a>
                             <%
                             }
                             %>
-                            <a href="<c:url value='/viewBookDetails' />?bid=<%=b.getBookId()%>' />"
+                            <a href="<c:url value='/viewBookDetails'/>?bid=<%=b.getBookId()%>"
                                 class="btn btn-success btn-sm ml-1">View Details</a> 
                             <a href="#" class="btn btn-danger btn-sm ml-1"><i
                                 class="fa-solid fa-indian-rupee-sign"></i> <%=b.getPrice()%></a>

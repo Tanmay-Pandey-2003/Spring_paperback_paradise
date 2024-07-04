@@ -5,9 +5,15 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.net.URL;
+import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -29,7 +35,9 @@ public class MainController {
 //    private UserDaoImpl userDao;
 //    
 
-
+	@Autowired
+	private BookService bookService;
+	
 	@Autowired
     private IBookDao bookDao;
     
@@ -42,7 +50,7 @@ public class MainController {
     @Autowired
     private IUserDao userDao;
     
-    @GetMapping("//viewBookDetails")
+    @GetMapping("/viewBookDetails")
     public String viewBooks(Model model) {
         
         List<BookDetails> books = bookDao.getAllBooks();
@@ -139,6 +147,12 @@ public class MainController {
    public String CheckoutPage(Model model) {
 	   return "checkout";
    }
+   
+   @GetMapping("/edit_books")
+   public String Edit_BookPage(Model model) {
+	   return "edit_books";
+   }
+   
    @PostMapping("/add_old_books")
    public String addOldBook(@RequestParam("bname") String bookName,
                             @RequestParam("author") String author,
@@ -444,4 +458,30 @@ public class MainController {
 
         return "all_books";
     }
+    
+    
+    /*For Image Fetching*/
+    
+    @GetMapping("/book")
+    public void getBookImage(@RequestParam("photoName") String photoName, HttpServletResponse response) throws IOException {
+        BookDetails book = bookService.getBookByPhotoName(photoName);
+        if (book != null && book.getPhotoName() != null) {
+            // Assuming photoName is a URL
+            URL url = new URL(book.getPhotoName());
+            URLConnection conn = url.openConnection();
+            response.setContentType(conn.getContentType());
+            try (InputStream inputStream = conn.getInputStream();
+                 OutputStream outputStream = response.getOutputStream()) {
+                byte[] buffer = new byte[4096];
+                int bytesRead;
+                while ((bytesRead = inputStream.read(buffer)) != -1) {
+                    outputStream.write(buffer, 0, bytesRead);
+                }
+            }
+        } else {
+            response.sendError(HttpServletResponse.SC_NOT_FOUND);
+        }
+    }
 }
+
+

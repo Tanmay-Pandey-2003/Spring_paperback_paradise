@@ -38,6 +38,11 @@ public class BookService {
     public BookDetails getBookById(int id){
     	return bookDao.getBookById(id);
     }
+    
+    public BookDetails getBookByPhotoName(String photoName) {
+        return bookDao.getBookByPhotoName(photoName);
+    }
+    
     public List<BookDetails> getBooksBySearch(String ch){
     	return bookDao.getBooksBySearch(ch);
     }

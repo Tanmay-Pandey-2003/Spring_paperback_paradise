@@ -151,9 +151,9 @@
 				<td><%=b.getBookCategory()%></td>
 				<td><%=b.getStatus()%></td>
 				<td>
-					<a href="<c:url value='/edit_books?id=${b.getBookId()}' />"
+					<a href="<c:url value='/edit_books'/>?id=<%=b.getBookId()%>"
 						class="btn btn-sm btn-primary"><i class="fa-solid fa-pen-to-square"></i> Edit</a> 
-					<a href="<c:url value='/delete?id=${b.getBookId()}' />"
+					<a href="<c:url value='/delete'/>?id=<%=b.getBookId()%>"
 						class="btn btn-sm btn-danger"><i class="fa-solid fa-trash-can"></i> Delete</a>
 				</td>
 			</tr>

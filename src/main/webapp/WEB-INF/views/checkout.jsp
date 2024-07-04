@@ -310,7 +310,7 @@
                             </div>
                             <div class="text-center">
                                 <button class="btn btn-warning">Order Now</button>
-                                <a href="index.jsp" class="btn btn-success">Continue Shopping</a>
+                                <a href="<c:url value='/index'/>" class="btn btn-success">Continue Shopping</a>
                             </div>
                         </form>
                     </div>
