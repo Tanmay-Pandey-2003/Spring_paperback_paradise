@@ -382,6 +382,7 @@ public class MainController {
         us.setName(name);
         us.setEmail(email);
         us.setPhno(phno);
+        us.setPassword(password);
 
         boolean status = userDao.checkpassword(id, password);
 
@@ -409,11 +410,11 @@ public class MainController {
                            Model model) {
         try {
             String fileName = bimg.getOriginalFilename();
-            BookDetails bd = new BookDetails(bookName, author, price, null, "Active", fileName, "admin");
+            BookDetails bd = new BookDetails(bookName, author, price, "New Book", "Active", fileName, "admin");
             boolean msg = bookDao.addBook(bd);
 
             if (msg) {
-                String path = session.getServletContext().getRealPath("") + "book";
+                String path = session.getServletContext().getRealPath("/book");
                 File file = new File(path);
                 if (!file.exists()) {
                     file.mkdirs();
@@ -462,8 +463,9 @@ public class MainController {
     
     /*For Image Fetching*/
     
-    @GetMapping("/book")
-    public void getBookImage(@RequestParam("photoName") String photoName, HttpServletResponse response) throws IOException {
+    @GetMapping("/book/{photoName}")
+    public void getBookImage(@PathVariable("photoName") String photoName, HttpServletResponse response) throws IOException {
+        System.out.println("Fetching image for photoName: " + photoName);
         BookDetails book = bookService.getBookByPhotoName(photoName);
         if (book != null && book.getPhotoName() != null) {
             // Assuming photoName is a URL
@@ -482,6 +484,7 @@ public class MainController {
             response.sendError(HttpServletResponse.SC_NOT_FOUND);
         }
     }
+
 }
 
 

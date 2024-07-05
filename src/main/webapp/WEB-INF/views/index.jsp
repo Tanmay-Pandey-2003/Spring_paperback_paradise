@@ -231,7 +231,7 @@
             <div class="col-md-3">
                 <div class="card crd-ho">
                     <div class="card-body text-center">
-                        <img alt="" src="<c:url value='/book' />?photoName=<%=b.getPhotoName()%>"
+                        <img alt="" src="<c:url value='/book'/><%=b.getPhotoName()%>"
                             style="width: 150px; height: 200px" class="img-thumblin">
                         <p><%=b.getBookName()%></p>
                         <p><%=b.getAuthor()%></p>

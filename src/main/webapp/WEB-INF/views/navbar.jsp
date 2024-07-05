@@ -85,7 +85,7 @@
     </div>
 </div>
 <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
-    <a class="navbar-brand" href="#"><i class="fa-solid fa-house"></i></a>
+    <a class="navbar-brand" href="<c:url value='/index'/>"><i class="fa-solid fa-house"></i></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -95,7 +95,7 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active"><a class="nav-link" href="<c:url value='/index'/>">Home
+            <li class="nav-item active"><a class="nav-link" href="<c:url value='/home'/>">Admin Dashboard
                     <span class="sr-only">(current)</span>
                 </a></li>
         </ul>

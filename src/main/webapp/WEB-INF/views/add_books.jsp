@@ -136,8 +136,9 @@
                             <div class="form-group">
                                 <label for="categories">Book Categories</label>
                                 <select id="categories" name="categories" class="form-control">
-                                    <option value="New Book" selected>New Book</option>
-                                    Add other options if needed
+                                	<option selected>---select---</option>
+                                    <option selected>New Book</option>
+                                   
                                 </select>
                             </div>
                             <div class="form-group">
