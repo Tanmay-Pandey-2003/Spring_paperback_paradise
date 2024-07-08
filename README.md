@@ -27,45 +27,56 @@ Our website provides the following features:
 
 1> Home Page 
 
-![homepage](https://user-images.githubusercontent.com/43900397/234164759-f8812ad3-9d8a-4cd5-aa56-fa32590859b1.png)
-2> Login: User are allowed to login if they are already register otherwise message shows up "user are not registered please register".​
-Admin can also login using their email and password.
-![login](https://user-images.githubusercontent.com/43900397/234164992-887f06af-b86c-4fc0-af6d-11e4ba6ac186.png)
+![homepage](https://github.com/Tanmay-Pandey-2003/Spring_paperback_paradise/assets/117560941/1bafeba5-5abb-4df9-90ae-84432431a18c)
 
-3> Register: User can register themselves and then only can login to the site if they are already register message shows up "user is already registered ".​
-![register](https://user-images.githubusercontent.com/43900397/234165067-3c95abf0-60d7-4cc4-9cec-03e5e03bdf5f.png)
+2> Login: 
+![login](https://github.com/Tanmay-Pandey-2003/Spring_paperback_paradise/assets/117560941/f6291790-3e23-4c0d-aafe-7fc9eab44ed9)
+
+
+3> Register:
+![Register](https://github.com/Tanmay-Pandey-2003/Spring_paperback_paradise/assets/117560941/b2877fa8-c650-4110-aea0-fa6ad8ca8de7)
 
 # Administration Module​
-1> Home Page : Admin can add new books , view all books , edit all books, view all ordered books and logout.​
-![adminControls](https://user-images.githubusercontent.com/43900397/234165216-3a16f523-c3de-4ce5-b62c-2d562361a116.png)
-2> Add Books : Admin can add new books , by filling the below details.​
-![addBooks](https://user-images.githubusercontent.com/43900397/234165316-a3bdc085-8609-4d9f-9f10-0ef4b2977e49.png)
-3> View All Books : Admin can view All books present in the database.​
-![AdminAllBooksLookOut](https://user-images.githubusercontent.com/43900397/234165399-0671d2ae-531b-4b85-9d9a-e91102f08798.png)
-4> Edit Books : Admin can view All books and edit or delete them.​
-![edit books](https://user-images.githubusercontent.com/43900397/234165457-9f1aa99f-6eb4-4c0e-a7ca-135d1d1c5a50.png)
+1> Home Page :
+![adminControls](https://github.com/Tanmay-Pandey-2003/Spring_paperback_paradise/assets/117560941/9457b92a-5467-4d8a-a3f6-b438dd236f0a)
+
+2> Add Books : 
+![Add_Books](https://github.com/Tanmay-Pandey-2003/Spring_paperback_paradise/assets/117560941/e18f1012-2605-4346-b7c4-953c162c058d)
+3> View All Books :
+![AdminAllBooksLookOut](https://github.com/Tanmay-Pandey-2003/Spring_paperback_paradise/assets/117560941/c65fdd62-713b-4b65-b8fb-66e9663a7dcf)
+
+4> Edit Books : 
+![edit books](https://github.com/Tanmay-Pandey-2003/Spring_paperback_paradise/assets/117560941/14840eea-0ea9-4e0a-abf4-40c1cfae6bef)
 
 # User Module​
-1> Home Page : User can add any books to the cart , view all books , view their ordered  books and buy books .​
-![userHome page](https://user-images.githubusercontent.com/43900397/234165557-263c0d83-a4ad-42f5-8072-0eacf9425fde.png)
-2>All New Books Page : All new Books show here.​
-![All new Books](https://user-images.githubusercontent.com/43900397/234165632-b4572d32-8c03-41c3-9fa9-bce6cb747bf1.png)
-3> Settings: User can sell Old books , Edit their profile , view their ordered books and take help using service center.​
-![Settings](https://user-images.githubusercontent.com/43900397/234165690-381a239d-e601-4fb2-a7f4-28c88b6e1b17.png)
-4>Sell Old Books : User can sell Old books by inserting the below details.​
-![sell Old Books](https://user-images.githubusercontent.com/43900397/234165767-ab7e4b1e-9c9b-4379-8d0e-688db226ca80.png)
-5>Edit profile : User can edit their profile details by inserting the below details.​
-![edit profile](https://user-images.githubusercontent.com/43900397/234165846-ae14f61f-beaa-4901-aed0-32658a32bed2.png)
-6> My Orders: User can ordered books of theirs using my Order button​
-![UserMy Orders](https://user-images.githubusercontent.com/43900397/234165886-196dc5e6-eb92-45eb-a43e-6223c619cc31.png)
-7> Help Center : In this section, we have provided the contact number and proper address so that customers and shopkeepers can reach us and mentioned their problems to solve if there is any technical issue related to their login and log out.​
-![contactUs](https://user-images.githubusercontent.com/43900397/234165942-a4c4e029-ebdb-4266-a37b-e37c015a3df8.png)
-8> View Book Details: User can view details of any books available and add them to cart from there only.​
-![view Details](https://user-images.githubusercontent.com/43900397/234166008-328eb1a7-7c72-4d4e-a8ba-25e06264dbc2.png)
-9> Cart: User can add books to the cart and they can also remove them . For ordering click the order now button.​
-![cart](https://user-images.githubusercontent.com/43900397/234166038-492cd3c0-db2b-492e-923a-d2f2abb796ae.png)
-10> Order placed : After successful order message is given to user about the delivery.​
-![order_success page](https://user-images.githubusercontent.com/43900397/234166113-8c67cf18-48e8-4ba8-ab81-6210813172eb.png)
+1> Home Page :
+![userHome page](https://github.com/Tanmay-Pandey-2003/Spring_paperback_paradise/assets/117560941/eaaa8e02-6a24-49d6-b09a-43c6817d20d1)
+2>All New Books Page : 
+![All new Books](https://github.com/Tanmay-Pandey-2003/Spring_paperback_paradise/assets/117560941/73397c3d-1146-496f-adb1-f1616e6ee06c)
+
+3> Settings:​
+![Settings](https://github.com/Tanmay-Pandey-2003/Spring_paperback_paradise/assets/117560941/e1adb747-1eba-460e-93ad-16e360781a4d)
+
+4>Sell Old Books : 
+![sell Old Books](https://github.com/Tanmay-Pandey-2003/Spring_paperback_paradise/assets/117560941/9d5a6d64-1884-4fd5-ae12-a0d5e51ade58)
+
+5>Edit profile 
+![edit profile](https://github.com/Tanmay-Pandey-2003/Spring_paperback_paradise/assets/117560941/9dc6cb6e-a5bb-439f-90fb-2bdc2b6f3012)
+
+6> My Orders: 
+![UserMy Orders](https://github.com/Tanmay-Pandey-2003/Spring_paperback_paradise/assets/117560941/384c5fb4-297d-4d3f-930f-3d19df3f34dc)
+
+7> Help Center :
+![contactUs](https://github.com/Tanmay-Pandey-2003/Spring_paperback_paradise/assets/117560941/9c4bdcaa-534f-4830-aa8b-48eb15f77922)
+
+8> View Book Details:
+![view Details](https://github.com/Tanmay-Pandey-2003/Spring_paperback_paradise/assets/117560941/58f2e045-6da1-47bc-9cdc-aa325f086ade)
+
+9> Cart: 
+![cart](https://github.com/Tanmay-Pandey-2003/Spring_paperback_paradise/assets/117560941/21707c24-1e97-4083-aca8-5bd49b091e68)
+
+10> Order placed :
+![order_success page](https://github.com/Tanmay-Pandey-2003/Spring_paperback_paradise/assets/117560941/83ea5965-d24c-414e-9e08-afd21896c66f)
 
 
 
