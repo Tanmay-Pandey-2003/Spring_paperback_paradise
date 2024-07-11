@@ -25,7 +25,7 @@ Our website provides the following features:
 
 # Website Home page​
 
-1> Home Page 
+#1> Home Page 
 
 ![homepage](https://github.com/Tanmay-Pandey-2003/Spring_paperback_paradise/assets/117560941/1bafeba5-5abb-4df9-90ae-84432431a18c)
 
